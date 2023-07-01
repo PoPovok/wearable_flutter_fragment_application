@@ -1,7 +1,8 @@
 name: wearable_flutter_fragment_application
 description: Provides DismissibleContainer Widget for Flutter based Wear OS applications while prevents common issues.
-version: 1.0.0
+version: 1.0.2
 repository: https://github.com/PoPovok/wearable_flutter_fragment_application
+homepage: https://github.com/PoPovok/wearable_flutter_fragment_application
 
 environment:
   sdk: '>=2.19.6 <3.0.0'
