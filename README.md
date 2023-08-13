@@ -65,12 +65,7 @@ Don't extend the function of `MainActivity : FlutterAcivity()` (eg. for `MethodC
 - WearableFragmentActivity: sets a basic content view
 
 ## Usage:
-To use this plugin, add `wearable_flutter_fragment_application` as a dependency in your `pubspec.yaml` file.
-
-```yaml
-dependencies:
-  wearable_flutter_fragment_application: ^1.0.0
-```
+To use this plugin, add `wearable_flutter_fragment_application` as a dependency in your `pubspec.yaml` file. See: https://pub.dev/packages/wearable_flutter_fragment_application/install
 
 I use [SlideableNavigator](https://pub.dev/packages/swipeable_page_route) for the examples, because the plugin does not yet have a wear OS styled one right now.
 

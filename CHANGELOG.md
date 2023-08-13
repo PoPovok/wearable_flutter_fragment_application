@@ -5,3 +5,5 @@
 * Links updated
 ## 1.0.2
 * Changelog fixed
+* ## 1.0.3
+* Documentation updated
