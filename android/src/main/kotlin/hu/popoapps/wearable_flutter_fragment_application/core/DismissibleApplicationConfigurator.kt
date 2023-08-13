@@ -4,6 +4,9 @@ import hu.popoapps.wearable_flutter_fragment_application.data.DismissibleApplica
 import io.flutter.embedding.android.FlutterFragment
 import io.flutter.plugin.common.MethodChannel
 
+/**
+ * Core of the plugin
+ */
 open class DismissibleApplicationConfigurator(
     val configuration: DismissibleApplicationConfiguration,
     val flutterComponentsProvider: FlutterComponentsProvider = FlutterComponentsProvider(configuration.context)
@@ -16,6 +19,9 @@ open class DismissibleApplicationConfigurator(
         private const val FRAGMENT_CHANNEL = "WearableFragmentApplication"
     }
 
+    /**
+     * Starting point of the class
+     */
     open fun setupFragment() {
         attachFlutterFragment()
         setUpMethodChannel()
