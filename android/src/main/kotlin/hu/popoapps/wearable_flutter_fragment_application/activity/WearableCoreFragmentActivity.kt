@@ -5,9 +5,18 @@ import hu.popoapps.wearable_flutter_fragment_application.data.DismissibleApplica
 import hu.popoapps.wearable_flutter_fragment_application.core.DismissibleApplicationConfigurator
 import hu.popoapps.wearable_flutter_fragment_application.layout.DismissibleLayout
 
+/**
+ * Inheriting from this class is necessary to use the plugin.
+ * The descendants must set a content view that implements
+ * hu.popoapps.wearable_flutter_fragment_application.layout.DismissibleLayout
+ */
 open class WearableCoreFragmentActivity : FragmentActivity() {
     protected lateinit var dismissibleApplicationConfigurator: DismissibleApplicationConfigurator
 
+    /**
+     * Initializes dismissibleApplicationConfigurator with a default configuration
+     * @param dismissibleLayout The specified layout in this plugin that must be included in your view.
+     */
     open fun setDismissibleApplicationConfigurator(dismissibleLayout: DismissibleLayout) {
         dismissibleApplicationConfigurator =
             DismissibleApplicationConfigurator(getDefaultDismissableApplicationConfiguration(dismissibleLayout))
@@ -21,6 +30,11 @@ open class WearableCoreFragmentActivity : FragmentActivity() {
         )
     }
 
+    /**
+     * It can be used on the onCreate method of the descendants.
+     * Sets up the core of the plugin.
+     * @param dismissibleLayout The specified layout in this plugin that must be included in your view.
+     */
     open fun setupDismissableApplicationConfigurator(dismissibleLayout: DismissibleLayout) {
         setDismissibleApplicationConfigurator(dismissibleLayout)
         dismissibleApplicationConfigurator.setupFragment()

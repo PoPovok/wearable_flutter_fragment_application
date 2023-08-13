@@ -9,7 +9,9 @@ class WearableCustomFragmentActivity: WearableFragmentActivity() {
     var customMethodChannel: MethodChannel? = null
 
 
-    // View is already set
+    /**
+     * View is already set by WearableFragmentActivity
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setUpCustomMethodChannel()
