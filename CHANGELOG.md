@@ -5,5 +5,9 @@
 * Links updated
 ## 1.0.2
 * Changelog fixed
-* ## 1.0.3
+## 1.0.3
 * Documentation updated
+## 1.0.4
+* Documentation updated
+## 1.1.0
+* Version upgrade

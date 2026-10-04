@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:wearable_flutter_fragment_application_example_customization/anotherapp.dart';
-import 'package:wearable_flutter_fragment_application_example_customization/mainapp.dart';
+import 'anotherapp.dart';
+import 'mainapp.dart';
 
 void main() {
   runApp(const MainApp());
 }
 
 /// Dont't forget to @pragma each custom entrypoint or it won't be compiled
+@pragma("vm:entry-point")
 @pragma("anotherActivity")
 void anotherActivity(){
   runApp(const AnotherApp());
